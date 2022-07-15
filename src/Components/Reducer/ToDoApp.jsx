@@ -78,8 +78,6 @@ function ToDoApp() {
 
      const {job, jobs} = state
 
-    console.log(setJob('hiihi'))
-
     const handleSubmit = () => {
         dispatch(addJob(job))
         dispatch(setJob(''))

@@ -1,14 +1,11 @@
-import { useState } from 'react';
-import './App.css';
-import AddUser from './Components/Users/AddUser';
-import UserList from './Components/Users/UserList';
+import React from 'react';
+import Menu from './Components/Router/Menu';
 
 function App() {
 
-  const [isLoggedIn, setIsLoggedIn] = useState(false)
-
   return (
     <div>
+      <Menu/>
     </div>
   );
 }

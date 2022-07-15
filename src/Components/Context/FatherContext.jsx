@@ -1,24 +1,23 @@
-import React from 'react'
-import { createContext, useState } from 'react'
-import ChildContext from './ChildContext'
-
-export const ThemeContext = createContext()
+import React from "react";
+import { useState } from "react";
+import ChildContext from "./ChildContext";
+import { ThemeContext } from "./ItIsContext";
 
 function FatherContext() {
+  const [theme, setTheme] = useState("dark");
 
-    const [theme, setTheme] = useState('dark')
-
-    const toggleTheme = () => {
-        setTheme(theme === 'dark' ? 'light' : 'dark')
-    }
+  const toggleTheme = () => {
+    setTheme(theme === "dark" ? "light" : "dark");
+    console.log("dark");
+  };
   return (
     <ThemeContext.Provider value={theme}>
-        <div>
+      <div>
         <button onClick={toggleTheme}> Toggle Theme</button>
-        <ChildContext/>
-    </div>
+        <ChildContext />
+      </div>
     </ThemeContext.Provider>
-  )
+  );
 }
 
-export default FatherContext
+export default FatherContext;
