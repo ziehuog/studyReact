@@ -1,11 +1,11 @@
 import React from 'react';
-import Menu from './Components/Router/Menu';
+import MyForm from './Components/Hooks/MyForm';
 
 function App() {
 
   return (
     <div>
-      <Menu/>
+      <MyForm/>
     </div>
   );
 }
