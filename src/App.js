@@ -1,11 +1,12 @@
 import React from 'react';
-import MyForm from './Components/Hooks/MyForm';
+import HookForm from './Components/Form/HookForm';
 
 function App() {
 
   return (
     <div>
-      <MyForm/>
+      {/* <MyForm/> */}
+      <HookForm/>
     </div>
   );
 }
